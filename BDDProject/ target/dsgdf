@@ -1,0 +1,1502 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 19,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 21,
+    "elements": [
+      {
+        "line": 24,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4910790981,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 25,
+                "value": "#Transfering data without keywords use \"\""
+              }
+            ],
+            "line": 26,
+            "name": "I am in newtours home page \"http://newtours.demoaut.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.i_am_in_newtours_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Login Success with user name a and password a",
+        "description": "",
+        "id": "loing-test-for-newtorus-web;login-success-with-user-name-a-and-password-a",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 128772641,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I insert user name\u003d\"a\" and password\u003d\"a\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "a",
+                  "offset": 20
+                },
+                {
+                  "val": "a",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginTest.i_insert_user_name_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2446533303,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I press Login button",
+            "match": {
+              "location": "LoginTest.i_press_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65236820,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "\"SIGN-OFF\" link should be seen on the top menue",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SIGN-OFF",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginTest.link_should_be_seen_on_the_top_menue(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4263357754,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 25,
+                "value": "#Transfering data without keywords use \"\""
+              }
+            ],
+            "line": 26,
+            "name": "I am in newtours home page \"http://newtours.demoaut.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.i_am_in_newtours_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "login not success with username abced and pass ab",
+        "description": "",
+        "id": "loing-test-for-newtorus-web;login-not-success-with-username-abced-and-pass-ab",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "I insert user name \"abcd\" and password \"ab\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "i press login",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 38,
+            "name": "\"SIGN-ON\" link shoudl be seen",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3965393252,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 25,
+                "value": "#Transfering data without keywords use \"\""
+              }
+            ],
+            "line": 26,
+            "name": "I am in newtours home page \"http://newtours.demoaut.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.i_am_in_newtours_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "test gmail page",
+        "description": "Givne I am on gemail home page \"http://www.gmial.com\"",
+        "id": "loing-test-for-newtorus-web;test-gmail-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 42,
+            "name": "I insert Username \u003d\"xxxxx@gmail.com\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 43,
+            "name": "I insert password \u003d\"xxxxx\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "Press loing button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 45,
+            "name": "I should get login success",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4587977162,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 25,
+                "value": "#Transfering data without keywords use \"\""
+              }
+            ],
+            "line": 26,
+            "name": "I am in newtours home page \"http://newtours.demoaut.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.i_am_in_newtours_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 55,
+        "name": "Login test with different credencials",
+        "description": "",
+        "id": "loing-test-for-newtorus-web;login-test-with-different-credencials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 124954926,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I insert user name\u003d\"a\" and password\u003d\"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "a",
+                  "offset": 20
+                },
+                {
+                  "val": "5",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginTest.i_insert_user_name_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 871407088,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I press Login button",
+            "match": {
+              "location": "LoginTest.i_press_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5023119244,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"SIGN-OFF\"}\n  (Session info: chrome\u003d58.0.3029.96)\n  (Driver info: chromedriver\u003d2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform\u003dWindows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 5.02 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027LAPTOP-RO5NS03S\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir\u003dC:\\Users\\solomon\\AppData\\Local\\Temp\\scoped_dir20216_29932}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d58.0.3029.96, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 6f74bc769a222bd1aed6108c69e1f4fb\n*** Element info: {Using\u003dlink text, value\u003dSIGN-OFF}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:246)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)\r\n\tat stepDefinitions.LoginTest.link_should_be_seen_on_the_top_menue(LoginTest.java:40)\r\n\tat ✽.Then \"SIGN-OFF\" link should be seen on the top menue(loginTestofNewtours.feature:50)\r\n",
+              "status": "failed"
+            },
+            "line": 50,
+            "name": "\"SIGN-OFF\" link should be seen on the top menue",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SIGN-OFF",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginTest.link_should_be_seen_on_the_top_menue(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@tag"
+          },
+          {
+            "line": 46,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4126837164,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 25,
+                "value": "#Transfering data without keywords use \"\""
+              }
+            ],
+            "line": 26,
+            "name": "I am in newtours home page \"http://newtours.demoaut.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.i_am_in_newtours_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Login test with different credencials",
+        "description": "",
+        "id": "loing-test-for-newtorus-web;login-test-with-different-credencials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 123932061,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I insert user name\u003d\"b\" and password\u003d\"b\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "b",
+                  "offset": 20
+                },
+                {
+                  "val": "b",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginTest.i_insert_user_name_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2791975890,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I press Login button",
+            "match": {
+              "location": "LoginTest.i_press_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73169783,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "\"SIGN-OFF\" link should be seen on the top menue",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SIGN-OFF",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginTest.link_should_be_seen_on_the_top_menue(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@tag"
+          },
+          {
+            "line": 46,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5078560120,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 25,
+                "value": "#Transfering data without keywords use \"\""
+              }
+            ],
+            "line": 26,
+            "name": "I am in newtours home page \"http://newtours.demoaut.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.i_am_in_newtours_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 57,
+        "name": "Login test with different credencials",
+        "description": "",
+        "id": "loing-test-for-newtorus-web;login-test-with-different-credencials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 135551719,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I insert user name\u003d\"abc\" and password\u003d\"def\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc",
+                  "offset": 20
+                },
+                {
+                  "val": "def",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginTest.i_insert_user_name_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 789091553,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I press Login button",
+            "match": {
+              "location": "LoginTest.i_press_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56853404,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "\"SIGN-ON\" link should be seen on the top menue",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SIGN-ON",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginTest.link_should_be_seen_on_the_top_menue(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@tag"
+          },
+          {
+            "line": 46,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4648829142,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 25,
+                "value": "#Transfering data without keywords use \"\""
+              }
+            ],
+            "line": 26,
+            "name": "I am in newtours home page \"http://newtours.demoaut.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.i_am_in_newtours_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 58,
+        "name": "Login test with different credencials",
+        "description": "",
+        "id": "loing-test-for-newtorus-web;login-test-with-different-credencials;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 128848913,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I insert user name\u003d\"lmk\" and password\u003d\"7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lmk",
+                  "offset": 20
+                },
+                {
+                  "val": "7",
+                  "offset": 39
+                }
+              ],
+              "location": "LoginTest.i_insert_user_name_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 922931700,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I press Login button",
+            "match": {
+              "location": "LoginTest.i_press_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108916068,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "\"SIGN-ON\" link should be seen on the top menue",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SIGN-ON",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginTest.link_should_be_seen_on_the_top_menue(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@tag"
+          },
+          {
+            "line": 46,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4366135122,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 25,
+                "value": "#Transfering data without keywords use \"\""
+              }
+            ],
+            "line": 26,
+            "name": "I am in newtours home page \"http://newtours.demoaut.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.i_am_in_newtours_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 59,
+        "name": "Login test with different credencials",
+        "description": "",
+        "id": "loing-test-for-newtorus-web;login-test-with-different-credencials;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 128842493,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I insert user name\u003d\"c\" and password\u003d\"c\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "c",
+                  "offset": 20
+                },
+                {
+                  "val": "c",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginTest.i_insert_user_name_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2396334752,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I press Login button",
+            "match": {
+              "location": "LoginTest.i_press_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5037715367,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"SIGN-ON\"}\n  (Session info: chrome\u003d58.0.3029.96)\n  (Driver info: chromedriver\u003d2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform\u003dWindows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 5.04 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027LAPTOP-RO5NS03S\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir\u003dC:\\Users\\solomon\\AppData\\Local\\Temp\\scoped_dir11820_7895}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d58.0.3029.96, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 3b4221a4dab91d59d91574cb10785f83\n*** Element info: {Using\u003dlink text, value\u003dSIGN-ON}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:246)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)\r\n\tat stepDefinitions.LoginTest.link_should_be_seen_on_the_top_menue(LoginTest.java:40)\r\n\tat ✽.Then \"SIGN-ON\" link should be seen on the top menue(loginTestofNewtours.feature:50)\r\n",
+              "status": "failed"
+            },
+            "line": 50,
+            "name": "\"SIGN-ON\" link should be seen on the top menue",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SIGN-ON",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginTest.link_should_be_seen_on_the_top_menue(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@tag"
+          },
+          {
+            "line": 46,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4606824841,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 25,
+                "value": "#Transfering data without keywords use \"\""
+              }
+            ],
+            "line": 26,
+            "name": "I am in newtours home page \"http://newtours.demoaut.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginTest.i_am_in_newtours_home_page(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 60,
+        "name": "Login test with different credencials",
+        "description": "",
+        "id": "loing-test-for-newtorus-web;login-test-with-different-credencials;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 139140242,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I insert user name\u003d\"d\" and password\u003d\"d\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "d",
+                  "offset": 20
+                },
+                {
+                  "val": "d",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginTest.i_insert_user_name_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2537962493,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I press Login button",
+            "match": {
+              "location": "LoginTest.i_press_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67449441,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "\"SIGN-OFF\" link should be seen on the top menue",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SIGN-OFF",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginTest.link_should_be_seen_on_the_top_menue(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@tag"
+          },
+          {
+            "line": 46,
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "Loing test for newtorus web",
+    "description": "This is to test the newtorus login page functionality with different credencials",
+    "id": "loing-test-for-newtorus-web",
+    "keyword": "Feature",
+    "uri": "loginTestofNewtours.feature",
+    "tags": [
+      {
+        "line": 20,
+        "name": "@tag"
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5966308885,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "your are in registraion page \"http://newtours.demoaut.com/mercuryregister.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/mercuryregister.php",
+                  "offset": 30
+                }
+              ],
+              "location": "Registration.your_are_in_registraion_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 782324558,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Add correct data to registration form",
+            "match": {
+              "location": "Registration.add_correct_data_to_registration_form(DataTable)"
+            },
+            "rows": [
+              {
+                "comments": [
+                  {
+                    "line": 10,
+                    "value": "# transfering data using data table"
+                  }
+                ],
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "phone",
+                  "email",
+                  "address",
+                  "city",
+                  "state",
+                  "postalCode",
+                  "userName"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Solomon",
+                  "Habut",
+                  "3017929864",
+                  "ayanwsolomon1@gmail.com",
+                  "Locust st",
+                  "Herndon",
+                  "VA",
+                  "20171",
+                  "sol"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Solomon",
+                  "Habut",
+                  "3017929864",
+                  "ayanwsolomon1@gmail.com",
+                  "Locust st",
+                  "Herndon",
+                  "VA",
+                  "20171",
+                  "sol"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Check registraion with correct and incorrect password and confirm password field",
+        "description": "",
+        "id": "testing-registriaon-page-with-different-values;check-registraion-with-correct-and-incorrect-password-and-confirm-password-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 124931894,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I insert password \"abcd\" and confirm password  \"abcd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcd",
+                  "offset": 19
+                },
+                {
+                  "val": "abcd",
+                  "offset": 48
+                }
+              ],
+              "location": "Registration.i_insert_password_and_confirm_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1079661522,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click submit",
+            "match": {
+              "location": "Registration.i_click_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15999589,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "\"create_account_success.php\" page should be seen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "create_account_success.php",
+                  "offset": 1
+                }
+              ],
+              "location": "Registration.page_should_be_seen(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7484727442,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "your are in registraion page \"http://newtours.demoaut.com/mercuryregister.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/mercuryregister.php",
+                  "offset": 30
+                }
+              ],
+              "location": "Registration.your_are_in_registraion_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 785944798,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Add correct data to registration form",
+            "match": {
+              "location": "Registration.add_correct_data_to_registration_form(DataTable)"
+            },
+            "rows": [
+              {
+                "comments": [
+                  {
+                    "line": 10,
+                    "value": "# transfering data using data table"
+                  }
+                ],
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "phone",
+                  "email",
+                  "address",
+                  "city",
+                  "state",
+                  "postalCode",
+                  "userName"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Solomon",
+                  "Habut",
+                  "3017929864",
+                  "ayanwsolomon1@gmail.com",
+                  "Locust st",
+                  "Herndon",
+                  "VA",
+                  "20171",
+                  "sol"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Solomon",
+                  "Habut",
+                  "3017929864",
+                  "ayanwsolomon1@gmail.com",
+                  "Locust st",
+                  "Herndon",
+                  "VA",
+                  "20171",
+                  "sol"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Check registraion with correct and incorrect password and confirm password field",
+        "description": "",
+        "id": "testing-registriaon-page-with-different-values;check-registraion-with-correct-and-incorrect-password-and-confirm-password-field;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 140887684,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I insert password \"abcdefghijk\" and confirm password  \"abc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcdefghijk",
+                  "offset": 19
+                },
+                {
+                  "val": "abc",
+                  "offset": 55
+                }
+              ],
+              "location": "Registration.i_insert_password_and_confirm_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 632733270,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click submit",
+            "match": {
+              "location": "Registration.i_click_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7522155,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinitions.Registration.page_should_be_seen(Registration.java:69)\r\n\tat ✽.Then \"mercuryregister.php\" page should be seen(registraion.feature:18)\r\n",
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "\"mercuryregister.php\" page should be seen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mercuryregister.php",
+                  "offset": 1
+                }
+              ],
+              "location": "Registration.page_should_be_seen(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7331478155,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "your are in registraion page \"http://newtours.demoaut.com/mercuryregister.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://newtours.demoaut.com/mercuryregister.php",
+                  "offset": 30
+                }
+              ],
+              "location": "Registration.your_are_in_registraion_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 788198576,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Add correct data to registration form",
+            "match": {
+              "location": "Registration.add_correct_data_to_registration_form(DataTable)"
+            },
+            "rows": [
+              {
+                "comments": [
+                  {
+                    "line": 10,
+                    "value": "# transfering data using data table"
+                  }
+                ],
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "phone",
+                  "email",
+                  "address",
+                  "city",
+                  "state",
+                  "postalCode",
+                  "userName"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Solomon",
+                  "Habut",
+                  "3017929864",
+                  "ayanwsolomon1@gmail.com",
+                  "Locust st",
+                  "Herndon",
+                  "VA",
+                  "20171",
+                  "sol"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Solomon",
+                  "Habut",
+                  "3017929864",
+                  "ayanwsolomon1@gmail.com",
+                  "Locust st",
+                  "Herndon",
+                  "VA",
+                  "20171",
+                  "sol"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Check registraion with correct and incorrect password and confirm password field",
+        "description": "",
+        "id": "testing-registriaon-page-with-different-values;check-registraion-with-correct-and-incorrect-password-and-confirm-password-field;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 126716716,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I insert password \"\" and confirm password  \"abasdfsdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 19
+                },
+                {
+                  "val": "abasdfsdf",
+                  "offset": 44
+                }
+              ],
+              "location": "Registration.i_insert_password_and_confirm_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 597233922,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click submit",
+            "match": {
+              "location": "Registration.i_click_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15283320,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinitions.Registration.page_should_be_seen(Registration.java:69)\r\n\tat ✽.Then \"mercuryregister.php\" page should be seen(registraion.feature:18)\r\n",
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "\"mercuryregister.php\" page should be seen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mercuryregister.php",
+                  "offset": 1
+                }
+              ],
+              "location": "Registration.page_should_be_seen(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Testing registriaon page with different values",
+    "description": "As acompany our customers should register\r\nwith correct data\r\nso that we can refer them easily",
+    "id": "testing-registriaon-page-with-different-values",
+    "keyword": "Feature",
+    "uri": "registraion.feature"
+  }
+]
